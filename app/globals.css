@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #d0d2d2;
   --foreground: #171717;
+  --electric: oklch(0.957 0.214682 113.7625);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-electric: var(--electric);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --aspect-portrait: 2 / 3;
