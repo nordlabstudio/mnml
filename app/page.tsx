@@ -36,7 +36,7 @@ export default function Home() {
         {/* Top section with grid layout - takes available space and grows */}
         <div className="sm:grid sm:grid-cols-4 flex flex-col items-start gap-8 h-full min-h-0">
           <h1 className="col-span-1">Minimal works.</h1>
-          <div className="col-start-3 flex h-full">
+          <div className="sm:col-start-3 flex h-full">
             <div className="relative flex aspect-portrait w-auto">
               <Image
                 src="/portrait.jpeg"
