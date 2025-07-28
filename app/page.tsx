@@ -37,7 +37,7 @@ export default function Home() {
         <div className="sm:grid sm:grid-cols-4 flex flex-col items-start gap-8 h-full">
           <h1 className="col-span-1">Minimal works.</h1>
           <div className="sm:col-start-3 flex h-full">
-            <div className="relative flex aspect-square w-auto">
+            <div className="relative flex h-full aspect-portrait">
               <Image
                 src="/portrait.jpeg"
                 fill
