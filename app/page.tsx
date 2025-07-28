@@ -5,6 +5,7 @@ import { gsap, SplitText, useGSAP } from "@/lib/gsap";
 
 export default function Home() {
   const h2Ref = useRef(null);
+  const imageRef = useRef(null);
   const container = useRef(null);
 
   useGSAP(
@@ -16,7 +17,7 @@ export default function Home() {
       });
       gsap.from(Split.lines, {
         yPercent: 100,
-        stagger: 0.08,
+        stagger: 0.05,
         duration: 1,
         ease: "power4.out",
         scrollTrigger: {
@@ -24,6 +25,18 @@ export default function Home() {
           start: "top 80%",
         },
       });
+      gsap.fromTo(
+        imageRef.current,
+        { clipPath: "polygon(25% 25%, 75% 25%, 75% 75%, 25% 75%)", scale: 1.2 },
+
+        {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+          scale: 1,
+          duration: 1.5,
+          ease: "power4.out",
+          delay: 0.5,
+        }
+      );
     },
     {
       scope: container,
@@ -39,6 +52,7 @@ export default function Home() {
           <div className="sm:col-start-3 flex h-full">
             <div className="relative flex h-full aspect-portrait">
               <Image
+                ref={imageRef}
                 src="/portrait.jpeg"
                 fill
                 className="object-cover"
