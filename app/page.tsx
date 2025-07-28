@@ -32,9 +32,9 @@ export default function Home() {
 
   return (
     <main ref={container} className="w-full overflow-visible">
-      <section className="h-screen overflow-hidden flex flex-col pt-36 pb-8 px-5 sm:px-10 gap-32 bg-[#F1FF00]">
+      <section className="h-screen overflow-hidden flex flex-col sm:pt-36 pt-24 pb-8 px-5 sm:px-10 sm:gap-32 gap-4 bg-[#F1FF00]">
         {/* Top section with grid layout - takes available space and grows */}
-        <div className="sm:grid sm:grid-cols-4 flex flex-col items-start gap-8 h-full min-h-0">
+        <div className="sm:grid sm:grid-cols-4 flex flex-col items-start gap-8 h-full">
           <h1 className="col-span-1">Minimal works.</h1>
           <div className="sm:col-start-3 flex h-full">
             <div className="relative flex aspect-portrait w-auto">
