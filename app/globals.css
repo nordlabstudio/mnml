@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #d0d2d2;
-  --foreground: #171717;
-  --electric: oklch(0.957 0.214682 113.7625);
+  --background: #0f0f0f;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -13,13 +12,6 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --aspect-portrait: 2 / 3;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 @layer base {
