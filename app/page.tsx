@@ -35,12 +35,12 @@ export default function Home() {
           duration: 1.5,
           ease: "power4.out",
           delay: 0.5,
-        }
+        },
       );
     },
     {
       scope: container,
-    }
+    },
   );
 
   return (
@@ -65,7 +65,7 @@ export default function Home() {
         {/* Bottom section with grid layout - only takes content height */}
         <div className="sm:grid sm:grid-cols-2 flex flex-col items-start gap-8">
           <div className="flex flex-row items-center gap-2">
-            <div className="w-[12px] h-[12px] bg-foreground" />
+            <div className="w-[3] h-[3] bg-foreground" />
             <h3>About me</h3>
           </div>
           <h2 ref={h2Ref}>
